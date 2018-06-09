@@ -32,15 +32,8 @@ def TL_reward(detectors_ID,previous_reward):
 	for detector in detectors_ID:
 		reward = -traci.lanearea.getJamLengthVehicle(detector)
 		reward_sum += reward   
-	#reward_sum += previous_reward
+	reward_sum += previous_reward
 	return reward_sum
-
-	# reward_sum: ne passano solo due alla volta
-	# + phase: loss is nan
-	# += previous_reward: non cambia mai
-	# + phase: loss is nan<
-	# altre function?
-	# tolto primo if dopo while (faccio il training ogni secondo, invece che dieci)
 
 
 def run():
@@ -80,7 +73,7 @@ def run():
 				state = next_s
 				previous_reward = reward
 				if i > 0:
-					agent.fit_NN()		# fit the NN model, starting from epoch 2
+					agent.fit_NN()		# fit the NN model, starting from episode 2
 
 			else:
 				traci.simulationStep()

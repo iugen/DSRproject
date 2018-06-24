@@ -4,13 +4,13 @@
     <vType id="trailer" vClass="trailer"  maxSpeed="30" speedFactor="1.1" speedDev="0.1" />
     <vType id="coach" vClass="coach"  maxSpeed="30" speedFactor="1." speedDev="0.1" />
 
-    <flow id="normal1" type="normal" begin="0" end="5000" from="s11" to="-s33" departPos="last" departLane="best" probability="0.75"/>
-    <flow id="normal2" type="normal" begin="0" end="5000" from="s22" to="-s44" departPos="last" departLane="best" probability="0.75"/>
-    <flow id="normal3" type="normal" begin="0" end="5000" from="s33" to="-s11" departPos="last" departLane="best" probability="0.75"/>
-    <flow id="normal4" type="normal" begin="0" end="5000" from="s44" to="-s22" departPos="last" departLane="best" probability="0.75"/>
+    <flow id="normal1" type="normal" begin="0" end="5000" from="s11" to="-s33" departPos="last" departLane="best" probability="0.25"/>
+    <flow id="normal2" type="normal" begin="0" end="5000" from="s22" to="-s44" departPos="last" departLane="best" probability="0.15"/>
+    <flow id="normal3" type="normal" begin="0" end="5000" from="s33" to="-s11" departPos="last" departLane="best" probability="0.25"/>
+    <flow id="normal4" type="normal" begin="0" end="5000" from="s44" to="-s22" departPos="last" departLane="best" probability="0.15"/>
 
-    <flow id="sporty1" type="sporty" begin="0" end="5000" from="s11" to="-s33" departPos="last" departLane="best" probability="0.33"/>
-    <flow id="sporty2" type="sporty" begin="0" end="5000" from="s22" to="-s44" departPos="last" departLane="best" probability="0.33"/>
-    <flow id="sporty3" type="sporty" begin="0" end="5000" from="s33" to="-s11" departPos="last" departLane="best" probability="0.33"/>
-    <flow id="sporty4" type="sporty" begin="0" end="5000" from="s44" to="-s22" departPos="last" departLane="best" probability="0.33"/>
+    <flow id="sporty1" type="sporty" begin="0" end="5000" from="s11" to="-s33" departPos="last" departLane="best" probability="0.1"/>
+    <flow id="sporty2" type="sporty" begin="0" end="5000" from="s22" to="-s44" departPos="last" departLane="best" probability="0.05"/>
+    <flow id="sporty3" type="sporty" begin="0" end="5000" from="s33" to="-s11" departPos="last" departLane="best" probability="0.1"/>
+    <flow id="sporty4" type="sporty" begin="0" end="5000" from="s44" to="-s22" departPos="last" departLane="best" probability="0.05"/>
 </routes>
